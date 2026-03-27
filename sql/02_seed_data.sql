@@ -1,13 +1,3 @@
--- Active: 1774586206939@@ep-wispy-dawn-amldd42p-pooler.c-5.us-east-1.aws.neon.tech@5432@neondb
-CREATE TABLE orders (
-    id SERIAL PRIMARY KEY,
-    user_id INT,
-    order_date TIMESTAMP,
-    amount DECIMAL,
-    status TEXT,
-    description TEXT
-);
-
 -- Генерируем случайные данные
 INSERT INTO orders (user_id, order_date, amount, status, description)
 SELECT 
